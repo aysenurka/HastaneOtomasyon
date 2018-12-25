@@ -8,7 +8,7 @@ namespace Hastane.Lib.Models
 {
     public class Doktor : Kisi, IMaasAlabilir
     {
-        private List<Hemsire> Hemsireler { get; set; } = new List<Hemsire>();
+        public List<Hemsire> Hemsireler { get; set; } = new List<Hemsire>();
         public Branslar DbBrans { get; set; }
         public decimal Maas { get; set; }
     }

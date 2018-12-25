@@ -36,6 +36,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,13 +45,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\DoktorBusiness.cs" />
     <Compile Include="Data\Context.cs" />
     <Compile Include="Data\MockData.cs" />
+    <Compile Include="Helpers\DataHelper.cs" />
+    <Compile Include="Helpers\FormHelper.cs" />
     <Compile Include="Models\Branslar.cs" />
     <Compile Include="Models\Doktor.cs" />
     <Compile Include="Models\Gorevler.cs" />
     <Compile Include="Models\Hasta.cs" />
     <Compile Include="Models\Hemsire.cs" />
+    <Compile Include="Models\IAtama.cs" />
     <Compile Include="Models\IMaasAlabilir.cs" />
     <Compile Include="Models\Kisi.cs" />
     <Compile Include="Models\Personel.cs" />
@@ -60,5 +65,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
